@@ -1,16 +1,15 @@
-package com.example.todolist;
+package com.cision.todolist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @Controller
-public class TodolistApplication {
+public class StarterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TodolistApplication.class, args);
+		SpringApplication.run(StarterApplication.class, args);
 
 
 	}
