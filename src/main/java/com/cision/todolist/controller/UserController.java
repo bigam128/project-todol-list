@@ -24,8 +24,12 @@ public class UserController {
         return  userService.findAll();
     }
     @PostMapping(value = "/save")
-    public User  saveuser(User  user)
+    public User  saveuser(@RequestBody User  user)
     {
         return userService.saveuser(user);
+    }
+    @GetMapping(value = "/username")
+    public User  findByUsername(@RequestBody String  username) {
+        return userService.findByUsername(username);
     }
 }
